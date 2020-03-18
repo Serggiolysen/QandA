@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "897389591561",
+    "firebase_url": "https://qanda-9c058.firebaseio.com",
+    "project_id": "qanda-9c058",
+    "storage_bucket": "qanda-9c058.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897389591561:android:dc493b26843e1684284cd8",
+        "android_client_info": {
+          "package_name": "com.lysenko.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897389591561-8698bf3vq63dn3fmai7p1tnq9l3m1b8f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lysenko.myapplication",
+            "certificate_hash": "b56ba8d700385e995c298adec700e87b934c0a86"
+          }
+        },
+        {
+          "client_id": "897389591561-75aq7guc79r363uvljj0ke4bp0mnc3p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_iQ6mEg7byNTvOoJXJVIeOjjtnTcNPVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897389591561-75aq7guc79r363uvljj0ke4bp0mnc3p6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
