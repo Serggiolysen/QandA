@@ -1,9 +1,8 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
@@ -48,4 +47,5 @@ dependencies {
     implementation 'io.reactivex:rxandroid:1.2.1'
 
     implementation 'com.github.razerdp:AnimatedPieView:1.2.6'
+
 }

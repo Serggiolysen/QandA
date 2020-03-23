@@ -13,7 +13,7 @@ class HomeViewModel : ViewModel() {
 
     private val fireBaseProvider = FireBaseProvider()
 
-    fun pullQuestions(): LiveData<MutableList<Question>> {
+    fun fetchQuestions(): LiveData<MutableList<Question>> {
 
         val liveData2 =
             MutableLiveData<MutableList<Question>>().apply {
@@ -23,9 +23,12 @@ class HomeViewModel : ViewModel() {
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe {
                         value = it
-                        Log.d("aaaa    liveData2", it.toString())
                     }
             }
         return liveData2
+    }
+
+    fun removeAnswer(question: Question, answer :String) {
+        fireBaseProvider.removeValueFirebase(question, answer)
     }
 }

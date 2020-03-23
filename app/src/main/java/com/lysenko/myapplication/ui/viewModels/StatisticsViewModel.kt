@@ -8,7 +8,7 @@ class StatisticsViewModel : ViewModel() {
 
     val fireBaseProvider = FireBaseProvider()
 
-   fun updateAnswers(question: Question){
-       fireBaseProvider.updateFirebase(question)
-   }
+    fun updateAnswers(question: Question) {
+        fireBaseProvider.updateFirebase(question)
+    }
 }

@@ -13,11 +13,12 @@ import com.lysenko.myapplication.R
 import com.lysenko.myapplication.data.remote.model.Answer
 import com.lysenko.myapplication.data.remote.model.Question
 import com.lysenko.myapplication.ui.viewModels.AskViewModel
+import java.util.*
 
 class AskFragment : Fragment() {
 
     private lateinit var askViewModel: AskViewModel
-    private val questionCustomAskList = ArrayList<Question>()
+//    private val questionCustomAskList = ArrayList<Question>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -77,21 +78,20 @@ class AskFragment : Fragment() {
                 }
             }
 
-            questionCustomAskList.add(
-                Question(
-                    id = 0, name = questionCustomAsk.text.toString(),
-                    questionAuthor = questionAuthor.text.toString(), answers = Answer(list)
-                )
-            )
-
             if (questionCustomAsk.text.toString().isNotEmpty() &&
-                answerCustom1.text.toString().isNotEmpty() && answerCustom2.text.toString().isNotEmpty()
+                answerCustom1.text.toString().isNotEmpty() && answerCustom2.text.toString().isNotEmpty() &&
+                answerCustom1.text.toString() != answerCustom2.text.toString()
             ) {
-                askViewModel.pushQuestion(questionCustomAskList)
+                askViewModel.pushQuestion(
+                    Question(
+                        id = Date().time, userID = 0, name = questionCustomAsk.text.toString(),
+                        questionAuthor = questionAuthor.text.toString(), answers = Answer(list), voted = false
+                    )
+                )
             } else {
                 Toast.makeText(
                     context,
-                    "Заполните поля \"Вопрос\" и минимум 2 ответа",
+                    "Заполните поля \"Вопрос\". Минимум 2 РАЗНЫХ ответа",
                     Toast.LENGTH_LONG
                 )
                     .show()
