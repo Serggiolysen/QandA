@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Q&amp;A</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Statistics</string>
-    <string name="title_notifications">Ask</string>
+    <string name="title_home">Дом</string>
+    <string name="title_dashboard">Статистика</string>
+    <string name="title_notifications">Спросить</string>
+    <string name="question">Вопрос</string>
+    <string name="questionAuthor">Спрашивает</string>
 </resources>

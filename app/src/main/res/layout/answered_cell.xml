@@ -2,92 +2,61 @@
 <LinearLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/questionAreaAnswered"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="6dp"
-    android:layout_marginTop="6dp"
-    android:layout_marginRight="6dp"
-    android:background="#1EA589DB"
-    android:orientation="vertical"
-    android:padding="3dp">
+    android:layout_margin="10dp"
+    android:background="@drawable/selector2"
+    android:elevation="5dp"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/questionAreaAnswered"
+
+    <TextView
+        android:id="@+id/questionTitleAnswered"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#000000"
+        android:textSize="16sp" />
 
-        <ImageView
-            android:id="@+id/questionAvatarAnswered"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/question" />
+    <View
+        android:id="@+id/view0"
+        android:layout_width="match_parent"
+        android:layout_height="11dp" />
 
-        <TextView
-            android:id="@+id/questionTitleAnswered"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:fontFamily="sans-serif-medium"
-            android:paddingStart="10dp"
-            android:textColor="#000000"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/questionArea2Answered"
+    <TextView
+        android:id="@+id/questionAuthorAnswered"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:orientation="vertical"
-        android:paddingRight="4dp">
+        android:layout_margin="7dp"
+        android:alpha="0.5"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="left"
+        android:textSize="13sp" />
 
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="11dp" />
 
-
-        <Button
-            android:id="@+id/buttonReAnswerAnswered"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="100dp"
-            android:alpha="0.7"
-            android:text="разархивировать"
-            android:background="#DAF0C1"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="#000000"
-            android:textSize="16sp" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:id="@+id/questionIDAnswered"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:paddingStart="5dp"
-                android:textColor="#000000"
-                android:textSize="13sp" />
-
-            <TextView
-                android:id="@+id/questionAuthorAnswered"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:alpha="0.5"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="end"
-                android:textColor="#000000"
-                android:textSize="13sp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/buttonReAnswerAnswered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@drawable/selector"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Разархивировать"
+        android:textSize="16sp"/>
 
 </LinearLayout>
+
+
+
+
+

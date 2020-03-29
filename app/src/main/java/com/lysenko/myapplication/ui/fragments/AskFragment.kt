@@ -9,6 +9,9 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.lysenko.myapplication.R
 import com.lysenko.myapplication.data.remote.model.Answer
 import com.lysenko.myapplication.data.remote.model.Question
@@ -88,6 +91,8 @@ class AskFragment : Fragment() {
                         questionAuthor = questionAuthor.text.toString(), answers = Answer(list), voted = false
                     )
                 )
+                val navController = findNavController()
+                navController.navigate(R.id.nav_home)
             } else {
                 Toast.makeText(
                     context,
@@ -96,6 +101,8 @@ class AskFragment : Fragment() {
                 )
                     .show()
             }
+
+
         }
     }
 }

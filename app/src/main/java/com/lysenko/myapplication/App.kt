@@ -24,6 +24,14 @@ class App : Application() {
             editor.putLong(questionID.toString(), questionID * 2).apply()
         }
 
+        fun changeQuestionIDx4(questionID: Long) {
+            editor.putLong(questionID.toString(), questionID * 4).apply()
+        }
+
+        fun changeQuestionIDx6(questionID: Long) {
+            editor.putLong(questionID.toString(), questionID * 6).apply()
+        }
+
         fun setAnswer(questionID: Long, answer: String) {
             editor.putString((questionID - 1).toString(), answer).apply()
         }
@@ -32,9 +40,7 @@ class App : Application() {
             return prefs.getString((questionID - 1).toString(), "")!!
         }
 
-        fun changeQuestionIDx4(questionID: Long) {
-            editor.putLong(questionID.toString(), questionID * 4).apply()
-        }
+
     }
 
     override fun onCreate() {

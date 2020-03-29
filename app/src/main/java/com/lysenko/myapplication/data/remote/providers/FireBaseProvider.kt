@@ -36,12 +36,9 @@ class FireBaseProvider {
     fun removeValueFirebase(question: Question, answer: String) {
         val answersList = question.answers!!.answerName!!
         for (i in answersList.size-1 downTo 0) {
-            Log.e("pppp  list[i] --",answersList[i] )
-            Log.e("pppp  answer --",answer )
-            Log.e("pppp","_________" )
-//            0:"1"   0:"1"
-//            1:"2"
-//            2:"1"   2:"1"
+//            Log.e("pppp  list[i] --",answersList[i] )
+//            Log.e("pppp  answer --",answer )
+//            Log.e("pppp","_________" )
 
 
             if (answersList[i] == answer) {
